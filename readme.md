@@ -8,3 +8,5 @@ abordam:
 -Listas
 -Tuplas
 -Modulo
+-Dicionario
+-POO
