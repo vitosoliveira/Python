@@ -1,32 +1,34 @@
-import controle
+import controle1
 
-elevador1 = controle.Elevador(5,[0,1,2,3,4,5])
-elevador2 = controle.Elevador(5,[0,6,7,8,9,10])
+ElevadorEsquerda = controle1.Elevador(10, [0, 1, 3, 5, 6])
 
+ElevadorDireita = controle1.Elevador(10, [-2, -1, 0, 1, 2, 3, 4, 5])
 
-
-elevador1.set_quantidade_pessoas(0)
-elevador1.entrar() #1
-elevador1.entrar() #2
-elevador1.entrar() #3
-elevador1.entrar() #4
-elevador1.entrar() #5
-elevador1.entrar()
-
-elevador2.set_quantidade_pessoas(0)
-elevador2.entrar() #1
-elevador2.entrar() #2 
-elevador2.entrar() #3
-elevador2.entrar() #4
-elevador2.entrar() #5
-elevador2.entrar()
+Elevador1 = controle1.Elevador(10, [-4, -2, 0, 2, 4, 6, 8, 10, 12])
+Elevador2 = controle1.Elevador(10,[-3, -1, 0, 1, 3, 5, 7, 9, 11, 13, 15])
+elevador3 = controle1.Elevador(10, [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14])
 
 
 
-elevador1.set_quantidade_pessoas(50)
-elevador1.sair()
+
+Elevador1.deslocar_para(10)
+Elevador2.deslocar_para(-3)
+elevador3.deslocar_para(4)
+
+Elevador1.entrar()
+Elevador1.entrar()
+Elevador1.entrar()
+Elevador1.entrar()
+Elevador2.entrar()
+Elevador2.entrar()
+Elevador2.entrar()
+Elevador2.entrar()
+Elevador2.entrar()
+elevador3.entrar()
 
 
 
-#3elevador1.descer()
-#3elevador2.descer()
+
+print("Elevador1 está no andar:", Elevador1.get_andar_atual(), "e com ", Elevador1.get_quantidade_pessoas(), "pessoas")
+print("Elevador2 está no andar:", Elevador2.get_andar_atual(), "e com ", Elevador2.get_quantidade_pessoas(), "pessoas")
+print("Elevador3 está no andar:", elevador3.get_andar_atual(), "e com ", elevador3.get_quantidade_pessoas(), "pessoas")
