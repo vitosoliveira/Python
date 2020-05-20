@@ -10,5 +10,3 @@ def cpf_para_caracter(inteiro):
             else:
                 cpf = cpf+char
         return cpf
-    else:
-        return "String inválida"
